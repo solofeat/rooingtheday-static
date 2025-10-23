@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Rooing the Day</title>
+    <link href="https://unpkg.com/@primer/css@latest/dist/primer.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+    <div data-include="/includes/header.html"></div>
+
+    <main class="container-lg py-6">
+        <section class="text-center py-6">
+            <h1 class="h1 text-gray-dark mb-3">Welcome to Our Site</h1>
+            <p class="lead text-gray mb-4">Built with Primer Design System for a clean, accessible experience.</p>
+            <div class="d-flex flex-justify-center flex-wrap">
+                <a href="#features" class="btn btn-primary mr-2 mb-2">Learn More</a>
+                <a href="contact.html" class="btn btn-outline mb-2">Get in Touch</a>
+            </div>
+        </section>
+
+        <section id="features" class="py-6">
+            <h2 class="h2 text-center mb-4">Features</h2>
+            <div class="d-flex flex-wrap flex-justify-center">
+                <div class="col-12 col-md-4 p-3">
+                    <div class="Box p-4">
+                        <h3 class="h3 mb-2">Responsive Design</h3>
+                        <p class="text-gray">Works seamlessly on all devices using Primer's utility classes.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 p-3">
+                    <div class="Box p-4">
+                        <h3 class="h3 mb-2">Accessible</h3>
+                        <p class="text-gray">Built with accessibility in mind, following Primer's guidelines.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 p-3">
+                    <div class="Box p-4">
+                        <h3 class="h3 mb-2">Fast</h3>
+                        <p class="text-gray">Lightweight static HTML for quick loading times.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div data-include="/includes/footer.html"></div>
+
+    <script src="js/includes.js"></script>
+</body>
+</html>

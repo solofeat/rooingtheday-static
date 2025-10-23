@@ -1,0 +1,22 @@
+{
+  "name": "rooingtheday-static",
+  "version": "1.0.0",
+  "description": "Static website for Rooing the Day using Primer design system",
+  "main": "index.js",
+  "scripts": {
+    "start": "live-server public --port=8080 --open=/",
+    "dev": "live-server public --port=8080 --open=/"
+  },
+  "keywords": [
+    "static",
+    "website",
+    "primer",
+    "html",
+    "css"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}
