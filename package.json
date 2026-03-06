@@ -6,7 +6,7 @@
   "scripts": {
     "start": "live-server public --port=8080 --open=/",
     "dev": "live-server public --port=8080 --open=/",
-    "build": "echo 'Static site - no build required'"
+    "build": "ls -la public/css/ && echo 'Static site - no build required'"
   },
   "keywords": [
     "static",
