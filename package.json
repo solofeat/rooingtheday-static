@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "live-server public --port=8080 --open=/",
-    "dev": "live-server public --port=8080 --open=/",
-    "build": "cp -r public dist"
+    "dev": "live-server public --port=8080 --open=/"
   },
   "keywords": [
     "static",

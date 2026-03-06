@@ -1,8 +1,226 @@
 /* Custom styles for Rooing the Day static site */
-/* Primer CSS handles most styling, this is for any custom overrides */
+/* Primer CSS handles most styling, this is for custom overrides */
 
-body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+/* ============================================
+   CUSTOM COLOR PALETTE
+   - French Blue: #0069AA
+   - Vivid Tangerine: #FF6B35
+   - Dark Emerald: #0D5E36
+   - Bright Snow: #FBFBFB
+   - Gunmetal: #343A40
+   ============================================ */
+
+/* Base Colors */
+:root {
+    --french-blue: #0069AA;
+    --vivid-tangerine: #FF6B35;
+    --dark-emerald: #0D5E36;
+    --bright-snow: #FBFBFB;
+    --gunmetal: #343A40;
+    --gunmetal-light: #5A6268;
+    --white: #FFFFFF;
 }
 
-/* Add any custom styles here if needed */
+/* Body & Background */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    background-color: var(--bright-snow);
+    color: var(--gunmetal);
+}
+
+/* Custom Text Colors */
+.text-french-blue {
+    color: var(--french-blue) !important;
+}
+
+.text-vivid-tangerine {
+    color: var(--vivid-tangerine) !important;
+}
+
+.text-dark-emerald {
+    color: var(--dark-emerald) !important;
+}
+
+.text-gunmetal {
+    color: var(--gunmetal) !important;
+}
+
+/* Custom Backgrounds */
+.bg-french-blue {
+    background-color: var(--french-blue) !important;
+    color: var(--white) !important;
+}
+
+.bg-vivid-tangerine {
+    background-color: var(--vivid-tangerine) !important;
+    color: var(--white) !important;
+}
+
+.bg-dark-emerald {
+    background-color: var(--dark-emerald) !important;
+    color: var(--white) !important;
+}
+
+.bg-gunmetal {
+    background-color: var(--gunmetal) !important;
+    color: var(--white) !important;
+}
+
+.bg-bright-snow {
+    background-color: var(--bright-snow) !important;
+}
+
+/* Border Colors */
+.border-french-blue {
+    border-color: var(--french-blue) !important;
+}
+
+.border-vivid-tangerine {
+    border-color: var(--vivid-tangerine) !important;
+}
+
+.border-dark-emerald {
+    border-color: var(--dark-emerald) !important;
+}
+
+.border-gunmetal {
+    border-color: var(--gunmetal) !important;
+}
+
+/* Header */
+header {
+    background-color: var(--gunmetal) !important;
+    border-bottom: 3px solid var(--french-blue) !important;
+}
+
+header a {
+    color: var(--white) !important;
+    text-decoration: none !important;
+}
+
+header a:hover {
+    color: var(--bright-snow) !important;
+    opacity: 0.85;
+}
+
+/* Footer */
+footer {
+    background-color: var(--gunmetal) !important;
+}
+
+footer .text-gray {
+    color: var(--bright-snow) !important;
+    opacity: 0.9;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: var(--french-blue) !important;
+    border-color: var(--french-blue) !important;
+    color: var(--bright-snow) !important;
+}
+
+.btn-primary:hover {
+    background-color: #005080 !important;
+    border-color: #005080 !important;
+}
+
+.btn-outline {
+    color: var(--french-blue) !important;
+    border-color: var(--french-blue) !important;
+    background-color: transparent !important;
+}
+
+.btn-outline:hover {
+    background-color: var(--french-blue) !important;
+    color: var(--white) !important;
+}
+
+/* Accent Button (Tangerine) */
+.btn-tangerine {
+    background-color: var(--vivid-tangerine) !important;
+    border-color: var(--vivid-tangerine) !important;
+    color: var(--white) !important;
+}
+
+.btn-tangerine:hover {
+    background-color: #E55A2B !important;
+    border-color: #E55A2B !important;
+}
+
+/* Emerald Button */
+.btn-emerald {
+    background-color: var(--dark-emerald) !important;
+    border-color: var(--dark-emerald) !important;
+    color: var(--white) !important;
+}
+
+.btn-emerald:hover {
+    background-color: #0A4A2A !important;
+    border-color: #0A4A2A !important;
+}
+
+/* Box Component Customizations */
+.Box {
+    border: 1px solid #DEE2E6 !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05) !important;
+}
+
+.Box:hover {
+    box-shadow: 0 4px 12px rgba(0, 105, 170, 0.15) !important;
+    border-color: var(--french-blue) !important;
+}
+
+/* Labels */
+.Label--success {
+    background-color: var(--dark-emerald) !important;
+}
+
+.Label--primary {
+    background-color: var(--french-blue) !important;
+}
+
+.Label--warning {
+    background-color: var(--vivid-tangerine) !important;
+}
+
+/* Links */
+a {
+    color: var(--french-blue);
+}
+
+a:hover {
+    color: var(--vivid-tangerine);
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--gunmetal);
+}
+
+/* Accent sections */
+.bg-gray-light {
+    background-color: #F3F4F6 !important;
+}
+
+/* Decorative accent bar */
+.accent-bar {
+    height: 4px;
+    background: linear-gradient(90deg, var(--french-blue) 0%, var(--vivid-tangerine) 50%, var(--dark-emerald) 100%);
+}
+
+/* Custom Label */
+.Label--success, .Label-success {
+    background-color: var(--dark-emerald) !important;
+    color: var(--white) !important;
+}
+
+.Label--primary {
+    background-color: var(--french-blue) !important;
+    color: var(--white) !important;
+}
+
+.Label--warning {
+    background-color: var(--vivid-tangerine) !important;
+    color: var(--white) !important;
+}
