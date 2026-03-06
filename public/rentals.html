@@ -4,11 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><i>Roo</i>'d Rentals - Equipment Rentals | <i>Roo</i>ing the Day</title>
-    <link href="https://unpkg.com/@primer/css@latest/dist/primer.css" rel="stylesheet">
+    <link href="https://unpkg.com/@primer/css@21.3.2/dist/primer.css" rel="stylesheet">
     <link href="/css/styles.css" rel="stylesheet">
 </head>
 <body>
-    <div data-include="/includes/header.html"></div>
+    <header class="bg-gunmetal border-bottom-2 border-french-blue">
+        <div class="container-lg p-3">
+            <nav class="d-flex flex-justify-between flex-items-center">
+                <a href="index.html" class="h4 text-bold text-white"><i>Roo</i>ing the Day</a>
+                <ul class="d-flex list-style-none">
+                    <li class="mr-3"><a href="index.html" class="text-white">Home</a></li>
+                    <li class="mr-3"><a href="rentals.html" class="text-white">Roo'd Rentals</a></li>
+                    <li class="mr-3"><a href="about.html" class="text-white">About</a></li>
+                    <li><a href="contact.html" class="text-white">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
     <main class="container-lg py-6">
         <section class="py-6 text-center">
@@ -117,7 +129,16 @@
         </section>
     </main>
 
-    <div data-include="/includes/footer.html"></div>
+    <footer class="border-top bg-gunmetal py-4">
+        <div class="container-lg text-center">
+            <p class="text-gray">&copy; 2023 <i>Roo</i>ing the Day. All rights reserved.</p>
+            <div class="d-flex flex-justify-center mt-2">
+                <a href="https://www.youtube.com/@RooingtheDay" target="_blank" class="btn btn-outline btn-sm mr-2">YouTube</a>
+                <a href="#" class="btn btn-outline btn-sm mr-2">Instagram</a>
+                <a href="#" class="btn btn-outline btn-sm">X</a>
+            </div>
+        </div>
+    </footer>
 
     <script src="/js/includes.js"></script>
 </body>
